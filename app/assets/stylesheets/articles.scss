@@ -1,0 +1,27 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.banner{
+  background-color: lightgray;
+  opacity: 0.5;
+  padding: 10px;
+}
+
+#app_name
+{
+  text-decoration: none;
+  color: black;
+}
+
+.article a{
+  font-size: 30px;
+}
+.container{
+  width: 500px;
+  margin: 20px auto;
+}
+
+form{
+  margin-bottom: 20px;
+}

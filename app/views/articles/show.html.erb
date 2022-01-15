@@ -1,0 +1,16 @@
+
+<div class="banner d-flex justify-content-between sticky-top">
+  <%= link_to "Rails-Wikinimous", articles_path %>
+  <%= link_to "New Article", new_article_path, class:"btn btn-primary"%>
+</div>
+<div class="container">
+  <h2><%= @article.title %></h2>
+
+  <p><%= @article.content %></p>
+  <%= link_to icon('fas', 'undo')+"Back to list", articles_path%>
+  <%= link_to icon('far', 'edit') + "Edit article", edit_article_path(@article) %>
+    <%= link_to icon('fas', 'dumpster')+ "Delete Article",
+              article_path(@article),
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+</div>
